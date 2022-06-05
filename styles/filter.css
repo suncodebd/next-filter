@@ -1,0 +1,117 @@
+/* Project  Navbar css */
+.ProjectNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  list-style: none;
+  gap: 0px 30px;
+}
+
+.nav_btn {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s ease;
+  background-color: black;
+  padding: 4px 20px;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.navbar_active {
+  color: rgb(96, 255, 247);
+}
+
+/* Projects Card css */
+.projectCard {
+  margin: 0;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+}
+.cardWrapper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px 20px;
+  background-color: #000000;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.CardImage {
+  width: 100%;
+  height: 100%;
+}
+.CardImage img {
+  transition: 0.3s ease;
+}
+
+.CardImage:hover img {
+  transform: scale(1.3);
+}
+
+.cardTitle {
+  font-size: 25px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.view {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.view a {
+  color: #000000;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 4px 12px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.view a:hover {
+  background-color: rgb(255, 251, 0);
+}
+
+/* Card  Product Css */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.filter_row_card {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px 20px;
+  justify-content: center;
+}
+
+/* responsive   */
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .ProjectNavbar {
+    gap: 0px 15px;
+  }
+  .nav_btn {
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
